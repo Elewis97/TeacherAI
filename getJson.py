@@ -82,7 +82,7 @@ allTransWords = ['first', 'second', 'also', 'finally', 'in conclusion', 'additon
 for idx in range(essayNum - 10):
     transWords = []
     # linewords = (line.split() for line in (essays[idx].lower().splitlines()))
-    paragraphNum = len(essays[idx].splitlines())
+    paragraphNum = len(essays[idx].split("\n"))
     print(paragraphNum)
     for line in essays[idx].lower().splitlines():
         linewords = line.split()
