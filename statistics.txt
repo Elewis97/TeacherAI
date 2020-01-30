@@ -1,0 +1,59 @@
+So... here are the statistics I've gathered so far
+10 essays have been taken out of the running for testing purposes. The last 10
+Also, the following distribution's total won't be 200 (as there are 210 total essays)
+since any where the score was 0 is taken out of the running
+
+Grade Distribution for Lead
+2   ->  24
+2.5 ->  41
+3   ->  88
+3.5 ->  18
+4   ->  7
+Total : 195
+
+Grade Distribution for Ending
+2   ->  35
+2.5 ->  44
+3   ->  65
+3.5 ->  3
+4   ->  4
+Total : 174
+
+Grade Distribution for Transitions
+2   ->  29
+2.5 ->  17
+3   ->  78
+3.5 ->  3
+4   ->  0
+Total : 194
+
+Observations: Removing all essays that weren't given a score for ending or lead,
+there is a 34% chance that the essay will have the same score for lead and ending
+there is a 69% chance that the essay will have lead and ending score withing a 0.5 std dev
+Due to the high probability that by just choosing the same lead and ending, we elected to
+find the score for the lead, and then give the same score for the ending as we will be
+70% likely to be correct within 0.5 pts.
+
+Distribution for Ending grade if the word "Conclusion" is in the essay:
+2   ->  6       
+2.5 ->  11      26%
+3   ->  23      55%
+3.5 ->  1 
+4   ->  1 
+Total : 42 essays with the word conclusion in them
+
+Therefore, if the word "conclusion" is in the essay, there is a 81% chance the essay
+will have a score of 2.5 or 3
+
+
+Distribution for Ending grade if the word "Conclusion" is NOT in the essay:
+2   ->  29       
+2.5 ->  33      
+3   ->  42      
+3.5 ->  2 
+4   ->  3 
+Total : 109 essays without the word conclusion in them
+
+Since the results are more ambiguous, we cannot truly figure make assumptions based on if
+conclusion is NOT included
+
