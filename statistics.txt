@@ -82,3 +82,14 @@ Distribution of transition words
 Total : 58
 
 ... but if I add more transition words?????
+
+
+HOW TO GET A TXT FILE FROM THE COMMAND LINE
+# Get text from command line
+try:
+    with open(sys.argv[1], 'r') as txt:
+        paragraph = txt.read()
+    # print (paragraph)
+except:
+    print ("A text file must be used")
+    sys.exit()
