@@ -57,3 +57,28 @@ Total : 109 essays without the word conclusion in them
 Since the results are more ambiguous, we cannot truly figure make assumptions based on if
 conclusion is NOT included
 
+ALSO!!!! Since very very few were ever given a 3.5 or a 4, if we never give out a score of 
+3.5 or 4, we will have a high probability for correctness, even if it is a shitty move. 
+And would never be put into production
+
+Distribution of transition words
+2   ->  7
+2.5 ->  9
+3   ->  40
+3.5 ->  2
+4   ->  0
+Total : 58
+
+As you can see, if those words are included, just default to a grade of 3, and you will have
+a ~70% accuracy. So.... yeah
+
+However, if the essay does not include those transition words... it doesn't tell us much
+Distribution of transition words
+2   ->  22
+2.5 ->  8
+3   ->  38
+3.5 ->  1
+4   ->  0
+Total : 58
+
+... but if I add more transition words?????

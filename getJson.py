@@ -75,7 +75,8 @@ bleh = 0
 same = 0
 under1 = 0
 
-allTransWords = ['first', 'second', 'also', 'finally', 'in conclusion', 'additon', 'reason']
+allTransWords = ['first', 'second', 'also', 'finally', 'in conclusion', 'additon', 'reason', 'next', 'all']
+# word ['did you', 'do you', ]
 #maybe add... um... next and all?????
 
 for idx in range(essayNum - 10):
@@ -90,10 +91,13 @@ for idx in range(essayNum - 10):
         elif len(linewords) > 0:
             transWords.append(linewords[0])
     hasTransition = False
+    hasYou = False
     for words in transWords:
         for tranWord in allTransWords:
             if tranWord in words:
                 hasTransition = True
+            if "you" in words:
+                hasYou = True
 
     
     # print(transWords, "\n-------------------\n")
@@ -118,46 +122,46 @@ for idx in range(essayNum - 10):
         if (abs(leadGrades[idx] - endingGrades[idx]) < 1):
             under1 = under1 + 1
 
-    if endingGrades[idx] > 0:
+    if transitionGrades[idx] > 0:
         total = total + 1
     
-    if endingGrades[idx] == 2.0:
+    if transitionGrades[idx] == 2.0:
         with2 = with2 + 1
         # total2 = total2 + origLen
         if paragraphNum < 8:
             total2 += 1
         # print (with2, origLen, changedLen, (changedLen / origLen) * 100)
         # print (misspelledWords)
-        if hasTransition:
+        if not hasYou:
             ewith2 = ewith2 + 1
         # print("\n---------------------\n", transWords, "\n---------------------\n")
-    if endingGrades[idx] == 2.5:
+    if transitionGrades[idx] == 2.5:
         with25 = with25 + 1
         # total25 = total25 + origLen
         if paragraphNum < 8:
             total25 += 1
-        if hasTransition:
+        if not hasYou:
             ewith25 = ewith25 + 1
-    if endingGrades[idx] == 3.0:
+    if transitionGrades[idx] == 3.0:
         with3 = with3 + 1
         # total3 = total3 + origLen
         if paragraphNum < 8:
             total3 += 1
-        if hasTransition:
+        if not hasYou:
             ewith3 = ewith3 + 1
-    if endingGrades[idx] == 3.5:
+    if transitionGrades[idx] == 3.5:
         with35 = with35 + 1
         # total35 = total35 + origLen
         if paragraphNum < 8:
             total35 += 1
-        if hasTransition:
+        if not hasYou:
             ewith35 = ewith35 + 1
-    if endingGrades[idx] == 4.0:
+    if transitionGrades[idx] == 4.0:
         with4 = with4 + 1
         # total4 = total4 + origLen
         if paragraphNum < 8:
             total4 += 1
-        if hasTransition:
+        if not hasYou:
             ewith4 = ewith4 + 1
     
 
